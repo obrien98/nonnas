@@ -1,0 +1,501 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Nonna's Pizzeria</title>
+     <meta name="description" content="DESCRIPTION">
+     <link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/parallax.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+     <style>
+     *{
+       margin: 0;
+       padding: 0;
+
+     }
+     </style>
+ </head>
+
+ <body>
+   <div class="container`">
+     <header class="header">
+   		<h1 class="logo nav-item"><a href="#">Nonna's Pizzeria</a></h1>
+         <ul class="main-nav">
+             <li class="nav-item"><a href="#menu">Menu</a></li>
+             <li class="nav-item"><a id = "contact-form-link" href="#contact-form">Contact</a></li>
+         </ul>
+   	</header>
+
+     <div class="parallax">
+       <form id = "contact-form">
+         <a id = "close-form-link" class="far fa-window-close close-form-style"></a>
+         <p>Nonna's would love to hear your feedback</p>
+         <input type = "text" placeholder="Name"/>
+         <input type = "email" placeholder="Email"/>
+         <textarea></textarea>
+         <button>Submit</button>
+       </form>
+     </div>
+
+     <div id = "menu" class="menu-grid">
+      <div class = "restaurant-info">
+        <h1>Nonna's Pizzeria</h1>
+        <p>
+          (914) 737-3222
+        </p>
+        <p>
+          1843 East Main Street Peekskill, New York 10566
+        </p>
+        <p>
+          Open today 11AM -11PM
+        </p>
+        <a class="fab fa-facebook-square"></a>
+
+      </div>
+      <div class = "table-of-contents">
+        <h2>Menu</h2>
+        <form id = "search-form">
+          <input id = "search-input" type = "search" placeholder = "Or search for an item..." />
+        </form>
+        <h3 class="menu-section"><a id = "appetizers-link" href="#appetizers">Appetizers</a></h3>
+        <h3 class="menu-section"><a id = "rolls-calzones-link" href="#rolls-calzones">Rolls & Calzones</a></h3>
+        <h3 class="menu-section"><a id = "pizza-link"  href="#pizza">Pizza</a></h3>
+        <h3 class="menu-section"><a id = "salads-link"  href="#salads">Salads</a></h3>
+        <h3 class="menu-section"><a id = "pasta-link"  href="#pasta">Pasta</a></h3>
+        <h3 class="menu-section"><a id = "sandwiches-link"  href="#sandwiches">Sandwiches</a></h3>
+        <h3 class="menu-section"><a id = "wraps-link"  href="#wraps">Wraps</a></h3>
+        <h3 class="menu-section"><a id = "burgers-link"  href="#burgers">Burgers</a></h3>
+        <h3 class="menu-section"><a id = "cold-sandwiches-link"  href="#cold-sandwiches">Cold Sandwiches</a></h3>
+
+      </div>
+
+      <div id = "inner-menu-grid" class = "inner-menu-grid">
+        s<h2 id = "appetizers" class="food-section-heading">Appetizers</h2>
+        <div class="menu-item">
+          <div class="food-item">
+            <span class="name-of-food">Zucchini Sticks</span>
+            <p class="food-description">Served with marinara sauce</p>
+          </div>
+          <div class="price">
+            $6.95
+          </div>
+         </div>
+
+         <div class="menu-item">
+           <div class="food-item">
+             <span class="name-of-food">Stuffed Mushrooms</span>
+           </div>
+           <div class="price">
+             $6.95
+           </div>
+          </div>
+
+        <div class="menu-item">
+          <div class="food-item">
+           <span class="name-of-food"> Mozzarella Sticks (5)</span>
+            <p class="food-description">Served with marinara sauce</p>
+          </div>
+          <div class="price">
+            $7.50
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="food-item">
+            <span class="name-of-food">Baked Clams</span>
+          </div>
+          <div class="price">
+            $8.96
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="food-item">
+            <span class="name-of-food">Mozarella Caprese</span>
+            <p class="food-description">Fresh mozzarella, tomatores, basil, olive oil & balsamic vinegar</p>
+          </div>
+          <div class="price">
+            $7.50
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="food-item">
+            <span class="name-of-food">Mozzarella Sticks (5)</span>
+          </div>
+          <div class="price">
+            $7.50
+          </div>
+        </div>
+
+        <h2  id = "rolls-calzones" class="food-section-heading">Rolls and Calzones</h2>
+        <div class="menu-item">
+          <div class="food-item">
+            <span class="name-of-food">Chicken Roll</span>
+          </div>
+          <div class="price">
+            $6.95
+          </div>
+         </div>
+         <div class="menu-item">
+           <div class="food-item">
+             <span class="name-of-food">Buffalo Chcicken Roll</span>
+           </div>
+           <div class="price">
+             $6.95
+           </div>
+          </div>
+          <div class="menu-item">
+            <div class="food-item">
+              <span class="name-of-food">Spinahc Roll</span>
+            </div>
+            <div class="price">
+              $6.95
+            </div>
+           </div>
+           <div class="menu-item">
+             <div class="food-item">
+               <span class="name-of-food">Sausage Roll</span>
+             </div>
+             <div class="price">
+               $6.95
+             </div>
+            </div>
+            <div class="menu-item">
+              <div class="food-item">
+                <span class="name-of-food">Chicken and Broccoli Roll</span>
+              </div>
+              <div class="price">
+                $6.95
+              </div>
+             </div>
+             <h2 id = "pizza" class="food-section-heading">Pizza</h2>
+             <div class="menu-item">
+               <div class="food-item">
+                 <span class="name-of-food">Zucchini Sticks</span>
+                 <p class="food-description">Served with marinara sauce</p>
+               </div>
+               <div class="price">
+                 $6.95
+               </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="food-item">
+                  <span class="name-of-food">Stuffed Mushrooms</span>
+                </div>
+                <div class="price">
+                  $6.95
+                </div>
+               </div>
+
+             <div class="menu-item">
+               <div class="food-item">
+                <span class="name-of-food"> Mozzarella Sticks (5)</span>
+                 <p class="food-description">Served with marinara sauce</p>
+               </div>
+               <div class="price">
+                 $7.50
+               </div>
+             </div>
+
+             <div class="menu-item">
+               <div class="food-item">
+                 <span class="name-of-food">Baked Clams</span>
+               </div>
+               <div class="price">
+                 $8.96
+               </div>
+             </div>
+
+             <div class="menu-item">
+               <div class="food-item">
+                 <span class="name-of-food">Mozarella Caprese</span>
+                 <p class="food-description">Fresh mozzarella, tomatores, basil, olive oil & balsamic vinegar</p>
+               </div>
+               <div class="price">
+                 $7.50
+               </div>
+             </div>
+
+             <div class="menu-item">
+               <div class="food-item">
+                 <span class="name-of-food">Mozzarella Sticks (5)</span>
+               </div>
+               <div class="price">
+                 $7.50
+               </div>
+             </div>
+
+             <h2  id = "salads" class="food-section-heading-heading">Salads</h2>
+             <div class="menu-item">
+               <div class="food-item">
+                 <span class="name-of-food">Chicken Roll</span>
+               </div>
+               <div class="price">
+                 $6.95
+               </div>
+              </div>
+              <div class="menu-item">
+                <div class="food-item">
+                  <span class="name-of-food">Buffalo Chcicken Roll</span>
+                </div>
+                <div class="price">
+                  $6.95
+                </div>
+               </div>
+               <div class="menu-item">
+                 <div class="food-item">
+                   <span class="name-of-food">Spinahc Roll</span>
+                 </div>
+                 <div class="price">
+                   $6.95
+                 </div>
+                </div>
+                <div class="menu-item">
+                  <div class="food-item">
+                    <span class="name-of-food">Sausage Roll</span>
+                  </div>
+                  <div class="price">
+                    $6.95
+                  </div>
+                 </div>
+                 <div class="menu-item">
+                   <div class="food-item">
+                     <span class="name-of-food">Chicken and Broccoli Roll</span>
+                   </div>
+                   <div class="price">
+                     $6.95
+                   </div>
+                  </div>
+
+                  <h2 id = "pasta" class="food-section-heading">Pasta</h2>
+                  <div class="menu-item">
+                    <div class="food-item">
+                      <span class="name-of-food">Pasta item</span>
+                    </div>
+                    <div class="price">
+                      $6.95
+                    </div>
+                   </div>
+                   <div class="menu-item">
+                     <div class="food-item">
+                       <span class="name-of-food">Buffalo Chcicken Roll</span>
+                     </div>
+                     <div class="price">
+                       $6.95
+                     </div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="food-item">
+                        <span class="name-of-food">Spinahc Roll</span>
+                      </div>
+                      <div class="price">
+                        $6.95
+                      </div>
+                     </div>
+                     <div class="menu-item">
+                       <div class="food-item">
+                         <span class="name-of-food">Sausage Roll</span>
+                       </div>
+                       <div class="price">
+                         $6.95
+                       </div>
+                      </div>
+                      <div class="menu-item">
+                        <div class="food-item">
+                          <span class="name-of-food">Chicken and Broccoli Roll</span>
+                        </div>
+                        <div class="price">
+                          $6.95
+                        </div>
+                       </div>
+
+                       <h2 id = "sandwiches" class="food-section-heading">Sandwiches</h2>
+                       <div class="menu-item">
+                         <div class="food-item">
+                           <span class="name-of-food">Chicken Roll</span>
+                         </div>
+                         <div class="price">
+                           $6.95
+                         </div>
+                        </div>
+                        <div class="menu-item">
+                          <div class="food-item">
+                            <span class="name-of-food">Buffalo Chcicken Roll</span>
+                          </div>
+                          <div class="price">
+                            $6.95
+                          </div>
+                         </div>
+                         <div class="menu-item">
+                           <div class="food-item">
+                             <span class="name-of-food">Spinahc Roll</span>
+                           </div>
+                           <div class="price">
+                             $6.95
+                           </div>
+                          </div>
+                          <div class="menu-item">
+                            <div class="food-item">
+                              <span class="name-of-food">Sausage Roll</span>
+                            </div>
+                            <div class="price">
+                              $6.95
+                            </div>
+                           </div>
+                           <div class="menu-item">
+                             <div class="food-item">
+                               <span class="name-of-food">Chicken and Broccoli Roll</span>
+                             </div>
+                             <div class="price">
+                               $6.95
+                             </div>
+                            </div>
+
+                            <h2 id = "wraps" class="food-section-heading">Wraps</h2>
+                            <div class="menu-item">
+                              <div class="food-item">
+                                <span class="name-of-food">Chicken Roll</span>
+                              </div>
+                              <div class="price">
+                                $6.95
+                              </div>
+                             </div>
+                             <div class="menu-item">
+                               <div class="food-item">
+                                 <span class="name-of-food">Buffalo Chcicken Roll</span>
+                               </div>
+                               <div class="price">
+                                 $6.95
+                               </div>
+                              </div>
+                              <div class="menu-item">
+                                <div class="food-item">
+                                  <span class="name-of-food">Spinahc Roll</span>
+                                </div>
+                                <div class="price">
+                                  $6.95
+                                </div>
+                               </div>
+                               <div class="menu-item">
+                                 <div class="food-item">
+                                   <span class="name-of-food">Sausage Roll</span>
+                                 </div>
+                                 <div class="price">
+                                   $6.95
+                                 </div>
+                                </div>
+                                <div class="menu-item">
+                                  <div class="food-item">
+                                    <span class="name-of-food">Chicken and Broccoli Roll</span>
+                                  </div>
+                                  <div class="price">
+                                    $6.95
+                                  </div>
+                                 </div>
+
+                                 <h2 id = "burgers" class="food-section-heading">Burgers</h2>
+                                 <div class="menu-item">
+                                   <div class="food-item">
+                                     <span class="name-of-food">Chicken Roll</span>
+                                   </div>
+                                   <div class="price">
+                                     $6.95
+                                   </div>
+                                  </div>
+                                  <div class="menu-item">
+                                    <div class="food-item">
+                                      <span class="name-of-food">Buffalo Chcicken Roll</span>
+                                    </div>
+                                    <div class="price">
+                                      $6.95
+                                    </div>
+                                   </div>
+                                   <div class="menu-item">
+                                     <div class="food-item">
+                                       <span class="name-of-food">Spinahc Roll</span>
+                                     </div>
+                                     <div class="price">
+                                       $6.95
+                                     </div>
+                                    </div>
+                                    <div class="menu-item">
+                                      <div class="food-item">
+                                        <span class="name-of-food">Sausage Roll</span>
+                                      </div>
+                                      <div class="price">
+                                        $6.95
+                                      </div>
+                                     </div>
+                                     <div class="menu-item">
+                                       <div class="food-item">
+                                         <span class="name-of-food">Chicken and Broccoli Roll</span>
+                                       </div>
+                                       <div class="price">
+                                         $6.95
+                                       </div>
+                                      </div>
+
+                                      <h2 id = "cold-sandwiches" class="food-section-heading">Cold Sandwiches</h2>
+                                      <div class="menu-item">
+                                        <div class="food-item">
+                                          <span class="name-of-food">Chicken Roll</span>
+                                        </div>
+                                        <div class="price">
+                                          $6.95
+                                        </div>
+                                       </div>
+                                       <div class="menu-item">
+                                         <div class="food-item">
+                                           <span class="name-of-food">Buffalo Chcicken Roll</span>
+                                         </div>
+                                         <div class="price">
+                                           $6.95
+                                         </div>
+                                        </div>
+                                        <div class="menu-item">
+                                          <div class="food-item">
+                                            <span class="name-of-food">Spinahc Roll</span>
+                                          </div>
+                                          <div class="price">
+                                            $6.95
+                                          </div>
+                                         </div>
+                                         <div class="menu-item">
+                                           <div class="food-item">
+                                             <span class="name-of-food">Sausage Roll</span>
+                                           </div>
+                                           <div class="price">
+                                             $6.95
+                                           </div>
+                                          </div>
+                                          <div class="menu-item">
+                                            <div class="food-item">
+                                              <span class="name-of-food">Chicken and Broccoli Roll</span>
+                                            </div>
+                                            <div class="price">
+                                              $6.95
+                                            </div>
+                                           </div>
+      </div> <!--close .inner-menu-grid-->
+    </div><!--close .menu-grid-->
+  </div><!-- closes .container-->
+
+<script src = "js/index.js"></script>
+ </body>
+
+ </html>
